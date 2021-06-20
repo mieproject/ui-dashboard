@@ -1,0 +1,107 @@
+// Variables
+
+@import "variables"; //Materialize custom variable file
+@import "../../components/variables"; //Materialize variable file
+
+
+@import "../../theme-components/theme-variables"; //Theme variable file
+@import "theme-variables"; //Theme custom variable file
+
+// Typography
+// Google Fonts
+@import url(https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&family=Mulish:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap);
+// Font Variables
+$title: 'Mulish', sans-serif;
+$content: 'Mulish', sans-serif;
+
+
+//Theme custom scss
+
+.sidenav .collapsible-body > ul:not(.collapsible) > li.active a,
+.sidenav.fixed .collapsible-body > ul:not(.collapsible) > li.active a{
+	background:$primary-color;
+}
+.horizontal-menu{
+	&.app-page{
+		#main {
+			min-height: calc(100% - 180px);
+			.content-wrapper-before {
+				top: 128px;
+			}
+		}
+		.sidebar{
+			.sidebar-content{
+				.sidebar-menu{
+					&#sidebar-list{
+						height: calc( 100vh - 370px);
+					}
+				}
+			}
+		}
+		.chat-application{
+			.chat-content-head{
+				height: 53px;
+				top: 35px;
+			}
+			.app-chat{
+				.chat-content{
+					.chat-content-area{
+						.chat-area{
+							height: calc( 100vh - 472px);
+						}
+					}
+					.sidebar{
+						.sidebar-chat{
+							height: calc( 100vh - 450px);
+						}
+					}
+				}
+			}
+		}
+		.app-todo{
+			.content-area{
+				.app-wrapper{
+					.todo-header{
+						padding: 1.2rem 1.5rem 0.75rem 0;
+					}
+				}
+			}
+		}
+		.content-area{
+			margin-top: 45px;
+			.app-wrapper{
+				.dataTables_wrapper{
+					.dataTables_scroll{
+						.dataTables_scrollBody{
+							height: calc( 100vh - 440px );
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 992px){
+	.horizontal-menu{
+		&.app-page{
+			#main {
+				min-height: calc(100% - 116px);
+				.content-wrapper-before {
+					top: 64px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 600px){
+	.horizontal-menu{
+		&.app-page{
+			#main {
+				min-height: calc(100% - 108px);
+				.content-wrapper-before {
+					top: 55px;
+				}
+			}
+		}
+	}
+}

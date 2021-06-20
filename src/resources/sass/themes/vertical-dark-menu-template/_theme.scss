@@ -1,0 +1,32 @@
+// Variables
+
+@import "variables"; //Materialize custom variable file
+@import "../../components/variables"; //Materialize variable file
+
+
+@import "../../theme-components/theme-variables"; //Theme variable file
+@import "theme-variables"; //Theme custom variable file
+
+// Typography
+// Google Fonts
+@import url(https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&family=Mulish:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap);
+// Font Variables
+$title: 'Mulish', sans-serif;
+$content: 'Mulish', sans-serif;
+
+
+//Theme custom scss
+.vertical-dark-menu{
+	.app-page{
+		#main {
+			min-height: calc(100% - 116px);
+		}
+	}
+	.navbar{
+		.header-search-wrapper-focus{
+			.search-list{
+				border: 1px solid color("grey","base");
+			}
+		}
+	}
+}

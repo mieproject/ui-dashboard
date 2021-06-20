@@ -1,0 +1,15 @@
+/*----------------------------------------
+  Grid
+------------------------------------------*/
+
+@use "sass:math";
+
+.section{
+	padding: math.div($gutter-width, 3) 0;
+}
+.row {
+	margin-bottom: 0;
+  .col {
+    padding: 0 math.div($gutter-width, 1.5);
+    }
+}

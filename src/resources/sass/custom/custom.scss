@@ -1,0 +1,36 @@
+@import "../theme-components/theme-variables";
+$partHeight: 100px;
+$verticalPadding: 15px;
+$horizontalPadding: 20px;
+$prefixes: "-webkit-" "-moz-" "-ms-" "-o-" "";
+
+* {
+    font-family: $title_ar;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: $title_ar;
+    font-weight: 400;
+    line-height: 1.1;
+    color: $title-font-color;
+}
+input:enabled{
+    background: #fff !important;
+}
+ul.collapsible.collapsible-sub a {
+    padding-top: 2px !important;
+    padding-right: 0 !important;
+    padding-left: 31px !important;
+    padding-bottom: 0 !important;
+}
+
+@media screen and (min-width: 600px) {
+    .inline-checkbox-span {
+        padding: 0 6px;
+    }
+
+    .inline-checkbox-span:not(:last-child) {
+        margin-right: 9px;
+        border-right: 1px solid;
+    }
+}
+

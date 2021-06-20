@@ -1,0 +1,2 @@
+php artisan ui-dashboard:install
+npm install && npm run dev
