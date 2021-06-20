@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 use MieProject\UIDashboard\Controllers\LanguageController;
 use MieProject\UIDashboard\Controllers\PageController;
 
+// todo: middleware if have premision
+// todo: fix pages
 Route::group(['namespace' => 'MieProject\UIDashboard\Controllers','as'=>'admin.','middleware'=>'web'], function() {
     Route::get('/tst', [PageController::class, 'blankPage']);
 
