@@ -30,8 +30,8 @@ class Helper
             'direction' => env('MIX_CONTENT_DIRECTION', 'ltr'),
         ];
 
-        // if any key missing of array from custom.php file it will be merge and set a default value from dataDefault array and store in data variable
-        $data = array_merge($dataDefault, config('custom.custom'));
+        // if any key missing of array from uidashboard.php file it will be merge and set a default value from dataDefault array and store in data variable
+        $data = array_merge($dataDefault, config('uidashboard.custom'));
 
         // all available option of materialize template
         $allOptions = [
@@ -49,7 +49,7 @@ class Helper
             'direction' => array('ltr', 'rtl'),
         ];
 
-        //if any options value empty or wrong in custom.php config file then set a default value
+        //if any options value empty or wrong in uidashboard.php config file then set a default value
         foreach ($allOptions as $key => $value) {
             if (gettype($data[$key]) === gettype($dataDefault[$key])) {
                 if (is_string($data[$key])) {
@@ -191,14 +191,14 @@ class Helper
         }
         return $layoutClasses;
     }
-    // updatesPageConfig function override all configuration of custom.php file as page requirements.
+    // updatesPageConfig function override all configuration of uidashboard.php file as page requirements.
     public static function updatePageConfig($pageConfigs)
     {
         $demo = 'custom';
         if (isset($pageConfigs)) {
             if (count($pageConfigs) > 0) {
                 foreach ($pageConfigs as $config => $val) {
-                    Config::set('custom.' . $demo . '.' . $config, $val);
+                    Config::set('uidashboard.' . $demo . '.' . $config, $val);
                 }
             }
         }
