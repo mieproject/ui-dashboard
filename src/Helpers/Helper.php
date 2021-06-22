@@ -25,8 +25,6 @@ class Helper
             'isFooterFixed' => false,
             'templateTitle' => '',
             'defaultLanguage'=>'en',
-            'largeScreenLogo' => 'images/logo/materialize-logo-color.png',
-            'smallScreenLogo' => 'images/logo/materialize-logo.png',
             'direction' => env('MIX_CONTENT_DIRECTION', 'ltr'),
         ];
 
@@ -69,13 +67,7 @@ class Helper
             }
         }
 
-        // if any of template logo is not set or empty is set to default logo
-        if (empty($data['largeScreenLogo'])) {
-            $data['largeScreenLogo'] = $dataDefault['largeScreenLogo'];
-        }
-        if (empty($data['smallScreenLogo'])) {
-            $data['smallScreenLogo'] = $dataDefault['smallScreenLogo'];
-        }
+
         //mainLayoutTypeClass array contain default class of body element
 
         $mainLayoutTypeClass = [
@@ -178,8 +170,6 @@ class Helper
             'isFooterDark' => $data['isFooterDark'],
             'isFooterFixed' => $data['isFooterFixed'],
             'templateTitle' => $data['templateTitle'],
-            'largeScreenLogo' => $data['largeScreenLogo'],
-            'smallScreenLogo' => $data['smallScreenLogo'],
             'defaultLanguage'=>$allOptions['defaultLanguage'][$data['defaultLanguage']],
             'mainFooterClass' => $mainFooterClass[$data['mainLayoutType']],
             'mainFooterColor' => $mainFooterColor[$data['mainLayoutType']],
