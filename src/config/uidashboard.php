@@ -1,6 +1,10 @@
 <?php
 // uidashboard.php file returd default configuration setting of layouts
 return [
+    "url"=>[
+        "prefix"=>'admin',    
+    ],
+
     'custom' => [
         'mainLayoutType' => 'vertical-modern-menu', //Options:vertical-modern-menu,vertical-menu-nav-dark,vertical-gradient-menu,vertical-dark-menu,horizontal-menu, default(vertical-modern-menu)
         'pageHeader' => false, //options:Boolean: false(default), true (Page Header for Breadcrumbs) Warning:if pageheader true need to define a breadcrums in controller
