@@ -1,2 +1,4 @@
+php artisan breeze:install vue
+npm install && npm run dev
 php artisan ui-dashboard:install
 npm install && npm run dev
