@@ -6,7 +6,7 @@
         <li>
           <h1 class="logo-wrapper">
             <a class="brand-logo darken-1" href="{{asset('/')}}">
-              <img src="{{ settings('app_logo')}}" alt="materialize logo">
+              <img src="{{ setting('app_logo')}}" alt="materialize logo">
               <span class="logo-text hide-on-med-and-down">
                 @if(!empty ($configData['templateTitle']))
                 {{$configData['templateTitle']}}

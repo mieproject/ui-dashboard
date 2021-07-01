@@ -5,22 +5,22 @@
       <a class="brand-logo darken-1" href="{{asset('/')}}">
         @if(!empty($configData['mainLayoutType']) && isset($configData['mainLayoutType']))
           @if($configData['mainLayoutType']=== 'vertical-modern-menu')
-          <img class="hide-on-med-and-down" src="{{ settings('app_logo')}}" alt="materialize logo" />
-          <img class="show-on-medium-and-down hide-on-med-and-up" src="{{ settings('app_logo')}}"
+          <img class="hide-on-med-and-down" src="{{ setting('app_logo')}}" alt="materialize logo" />
+          <img class="show-on-medium-and-down hide-on-med-and-up" src="{{ setting('app_logo')}}"
             alt="materialize logo" />
 
           @elseif($configData['mainLayoutType']=== 'vertical-menu-nav-dark')
-          <img src="{{ settings('app_logo')}}" alt="materialize logo" />
+          <img src="{{ setting('app_logo')}}" alt="materialize logo" />
 
           @elseif($configData['mainLayoutType']=== 'vertical-gradient-menu')
-          <img class="show-on-medium-and-down hide-on-med-and-up" src="{{ settings('app_logo')}}"
+          <img class="show-on-medium-and-down hide-on-med-and-up" src="{{ setting('app_logo')}}"
             alt="materialize logo" />
-          <img class="hide-on-med-and-down" src="{{ settings('app_logo')}}" alt="materialize logo" />
+          <img class="hide-on-med-and-down" src="{{ setting('app_logo')}}" alt="materialize logo" />
 
           @elseif($configData['mainLayoutType']=== 'vertical-dark-menu')
-          <img class="show-on-medium-and-down hide-on-med-and-up" src="{{ settings('app_logo')}}"
+          <img class="show-on-medium-and-down hide-on-med-and-up" src="{{ setting('app_logo')}}"
             alt="materialize logo" />
-          <img class="hide-on-med-and-down" src="{{ settings('app_logo')}}" alt="materialize logo" />
+          <img class="hide-on-med-and-down" src="{{ setting('app_logo')}}" alt="materialize logo" />
           @endif
         @endif
         <span class="logo-text hide-on-med-and-down">
